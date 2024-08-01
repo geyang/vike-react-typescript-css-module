@@ -25,6 +25,7 @@ function Page() {
           onClick={() => {
             const target = ['/markdown', '/star-wars', '/hello/alice'];
             const randomIndex = Math.floor(Math.random() * target.length);
+            // @ts-ignore
             navigate(target[randomIndex]);
           }}
         >
