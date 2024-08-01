@@ -1,0 +1,7 @@
+.swc
+
+/node_modules/
+/dist/
+
+.idea
+
