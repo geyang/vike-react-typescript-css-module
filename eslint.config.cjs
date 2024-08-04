@@ -2,11 +2,14 @@ module.exports = [
   { ignores: ['dist/'] },
   {
     files: [
-      '/vuer/**/*.jsx',
-      '/vuer/**/*.tsx',
+      '/pages/**/*.jsx',
+      '/pages/**/*.tsx',
     ],
     languageOptions: {
-      globals: { browser: true, es2020: true },
+      globals: {
+        browser: true,
+        es2020: true,
+      },
       parser: require('@typescript-eslint/parser'),
     },
     plugins: {

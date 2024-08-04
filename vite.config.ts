@@ -11,7 +11,7 @@ export default {
     }),
     mdx(),
     react({
-      jsxImportSource: '@emotion/react',
+      // jsxImportSource: '@emotion/react',
       devTarget: 'es2022',
       tsDecorators: true,
       // plugins: [['@swc/plugin-emotion', {}]],
@@ -25,9 +25,14 @@ export default {
   ],
   resolve: {
     preserveSymlinks: true,
-    alias: {
-      // https://github.com/emotion-js/emotion/issues/3129
-      '@emotion/react/jsx-runtime': 'react/jsx-runtime',
+  },
+  rollupOptions: {
+    output: {
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+        // 'three': 'THREE',
+      },
     },
   },
 } as UserConfig;
