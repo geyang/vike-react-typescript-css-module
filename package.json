@@ -33,6 +33,7 @@
   "type": "module",
   "devDependencies": {
     "@brillout/test-e2e": "^0.5.33",
+    "@types/node-sass": "^4.11.7",
     "@types/three": "^0.167.1",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint-plugin-css-modules": "^2.12.0",
